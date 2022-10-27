@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Raleway&display=swap');
+
+:root {
+  --nav: #471542;
+  --bg: #0C0B08;
+  --w: #EFE6CA;
+  --r: #400004;
+  --b: #0E0D3F;
+  --g: #E25F00;
+  --gl: #FFB986;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background-color: var(--bg);
+}
+
+/** Designing for Mobile first, desktop settings in media **/
+
+/** Navigation Sillies **/
+.navigation {
+    background: var(--nav);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    min-height: 7rem;
+  }
+
+  .logo {
+  margin-top: 2em;
+  }
+
+.nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-toggle-label span {
+    color: var(--g);
+    font-size: 1.5em;
+  }
+  
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--nav);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: var(--w);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  nav a:hover {
+    color: var(--gl);
+  }
+  
+  .nav-toggle:checked ~ nav {
+     transform: scale(1,1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+/** End Navigation Sillies **/
+
+
+/* Desktop */
+
+@media screen and (min-width: 850px) {
+  
+    /** Navigation Sillies **/
+    .nav-toggle-label {
+      display: none;
+    }
+    
+  .navigation {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+    
+    .logo {
+      grid-column: 1/3;
+    }
+
+    nav {
+        all:unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+      }
+      
+      nav a {
+        opacity: 1;
+        position: relative;
+      }
+      
+      nav a::before {
+        content:"";
+        display: block;
+        height: 4px;
+        background: var(--g);
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        right: 0;
+        transform: scale(0,.5);
+        transform-origin: left;
+        transition: transform ease-in-out 300ms;
+      }
+      
+      nav a:hover::before {
+        transform: scale(1,.5);
+      }
+      /** End Navigation Sillies **/
+
+}
