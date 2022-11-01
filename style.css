@@ -103,6 +103,17 @@ body {
   }
 /** End Navigation Sillies **/
 
+.secret {
+  background: var(--nav);
+  min-height: 7rem;
+  width: 100%;
+}
+
+.sc {
+  color: var(--w);
+  text-align: center;
+}
+
 /** Fix lmao **/
 .HI {
     height: 75vh;
