@@ -24,6 +24,41 @@ body {
 
 /** Designing for Mobile first, desktop settings in media **/
 
+/** Basic Design sillays **/
+
+.Special {
+  font-family: 'Barriecito', cursive;
+  font-size: 64px;
+  color: var(--g);
+}
+
+p {
+  font-family: 'Raleway', san-serif;
+  font-size: 18px;
+  color: var(--w);
+}
+
+.link-d-m {
+  color: var(--g);
+  transition: .35s;
+  font-weight: bolder;
+}
+
+.link-d-m:hover {
+  color: var(--gl);
+}
+
+.herobox {
+  padding: 20px;
+}
+
+.HP {
+  font-weight: bold;
+  line-height: 1.65rem;
+}
+
+/** End BDS **/
+
 /** Navigation Sillies **/
 .navigation {
     background: var(--nav);
@@ -116,12 +151,12 @@ body {
 
 /** Fix lmao **/
 .HI {
-    height: 75vh;
+    height: 60vh;
     width: 100%;
-    background: url(images/Hero.jpg);
+    background: url(images/Hero2.jpg);
     background-repeat: none;
     background-size: cover;
-    background-position: top right;
+    background-position: top center;
 }
 
 
@@ -184,5 +219,46 @@ body {
         transform: scale(1,.5);
       }
       /** End Navigation Sillies **/
+
+      .HI {
+        display: none;
+        height: 0px;
+        width: 0px;
+      }
+
+      .hero {
+        height: 75vh;
+        width: 100%;
+        position: relative;
+        background: url(images/Hero.jpg);
+        background-repeat: none;
+        background-size: cover;
+        background-position: top right;
+      }
+
+      .herobox {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 30px;
+        margin-bottom: 10vh;
+        margin-right: 52%;
+      }
+
+      .HP {
+        color: var(--bg);
+        font-weight: bold;
+        line-height: 1.65rem;
+      }
+
+      .link-s-d {
+        color: var(--nav);
+        transition: .35s;
+        font-weight: bolder;
+      }
+      
+      .link-s-d:hover {
+        color: var(--g);
+      }
 
 }
