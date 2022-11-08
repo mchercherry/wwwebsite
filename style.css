@@ -5,6 +5,7 @@
   --bg: #0C0B08;
   --w: #EFE6CA;
   --r: #400004;
+  --rl: #BB0000;
   --b: #0E0D3F;
   --g: #E25F00;
   --gl: #FFB986;
@@ -55,6 +56,10 @@ p {
 .HP {
   font-weight: bold;
   line-height: 1.65rem;
+}
+
+.rl {
+  color: var(--rl)
 }
 
 /** End BDS **/
@@ -260,5 +265,14 @@ p {
       .link-s-d:hover {
         color: var(--g);
       }
+
+
+      /*WW?! W?!*/
+
+      .topcha {
+        display: flex;
+      }
+
+      
 
 }
