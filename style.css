@@ -27,6 +27,8 @@ body {
 
 /** Basic Design sillays **/
 
+
+
 .Special {
   font-family: 'Barriecito', cursive;
   font-size: 64px;
@@ -37,6 +39,54 @@ p {
   font-family: 'Raleway', san-serif;
   font-size: 18px;
   color: var(--w);
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: .075rem;
+  padding: 10px 40px;
+}
+
+.bigbreak {
+  content: "";
+  display: block;
+  font-size: 4px;
+  line-height: 12px;
+}
+
+h2 {
+  font-size: 48px;
+  color: var(--g);
+  line-height: 56px;
+  font-weight: bold;
+  letter-spacing: .075rem;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.wide {
+  font-size: 32px;
+  letter-spacing: 1.5rem;
+  line-height: 32px;
+  color: var(--w);
+  font-weight: 300;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 100px;
+  font-weight: bold;
+  color: var(--gl);
+  padding: 20px;
+  background-color: var(--g);
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button:hover {
+  color: var(--g);
+  background-color: var(--gl);
 }
 
 .link-d-m {
@@ -164,6 +214,30 @@ p {
     background-position: top center;
 }
 
+#mixup {
+  text-align: center;
+}
+
+#mixup p {
+  text-align: left;
+}
+
+#mixup img {
+  display: none;
+}
+
+#mixup .imgbox {
+  width: 100%;
+  height: 60vh;
+  background: url(images/LTD-WW-crop.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: top center;
+}
+
+#album {
+  width: 100vw;
+}
 
 /* Desktop */
 
@@ -264,6 +338,32 @@ p {
       
       .link-s-d:hover {
         color: var(--g);
+      }
+
+      #mixup img {
+        display: block;
+        width: 50vw;
+      }
+
+      #mixup .imgbox {
+        background: none;
+      }
+
+      #mixup {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .wwbox {
+        height: 50vh;
+        padding-top: 1vh;
+      }
+
+      #album {
+        display: block;
+        width: 50vw;
+        margin: auto;
+        margin-top: 350px;
       }
 
 
