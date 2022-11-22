@@ -239,6 +239,11 @@ h2 {
   width: 100vw;
 }
 
+.topcha {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 /* Desktop */
 
 @media screen and (min-width: 850px) {
@@ -369,8 +374,14 @@ h2 {
 
       /*WW?! W?!*/
 
-      .topcha {
+      .couple {
         display: flex;
+        justify-content: center;
+      }
+
+      .capcha {
+        padding-top: 20px;
+        margin-right: -25%;
       }
 
       
