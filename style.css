@@ -239,9 +239,84 @@ h2 {
   width: 100vw;
 }
 
+.alinks {
+  display: none;
+}
+
+.blinks {
+  text-align: center;
+  display: block;
+  color: var(--gl);
+  line-height: 1.75rem;
+}
+
+.blinks a {
+  color: var(--gl);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: .3s;
+}
+
+.blinks a:hover {
+  color: var(--g);
+}
+
 .topcha {
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 50px 30px;
+}
+
+.topcha img {
+  max-width: 100%;
+  height: auto;
+  width: auto\15;
+}
+
+.searchbar {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+form.sb input[type=text] {
+  padding: 10px;
+  float: left;
+  font-size: 15px;
+  color: var(--rl);
+  font-family: 'Raleway', san-serif;
+  border: 1px solid var(--r);
+  border-radius: 10px 0 0 10px;
+  background: var(--w);
+  height: 70px;
+  width: 80%;
+}
+
+/*submit button*/
+form.sb button {
+  width: 20%;
+  float: left;
+  padding: 10px;
+  background: var(--r);
+  border: 1px solid var(--r);
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  cursor: pointer;
+  transition: .3s;
+  height: 70px;
+  overflow: hidden;
+}
+
+form.sb button:hover {
+  background: var(--rl);
 }
 
 /* Desktop */
@@ -362,13 +437,15 @@ h2 {
       .wwbox {
         height: 50vh;
         padding-top: 1vh;
+        z-index: 100;
       }
 
       #album {
         display: block;
         width: 50vw;
         margin: auto;
-        margin-top: 350px;
+        margin-top: 10%;
+        z-index: 1;
       }
 
 
