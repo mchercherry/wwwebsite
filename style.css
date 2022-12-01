@@ -193,6 +193,27 @@ h2 {
   }
 /** End Navigation Sillies **/
 
+footer {
+  background-color: var(--nav);
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+footer p {
+  color: var(--gl);
+  padding: 10px;
+}
+
+.ficons img {
+  padding: 10px;
+  width: 4.5em;
+}
+
 .secret {
   background: var(--nav);
   min-height: 7rem;
@@ -236,7 +257,7 @@ h2 {
 }
 
 #album {
-  width: 100vw;
+  width: 99vw;
 }
 
 .alinks {
@@ -261,6 +282,10 @@ h2 {
   color: var(--g);
 }
 
+.promo {
+  padding-bottom: 30px;
+}
+
 .topcha {
   width: 100%;
   display: flex;
@@ -274,6 +299,73 @@ h2 {
   height: auto;
   width: auto\15;
 }
+
+.couple {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+/*Div Hell*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.wwc {
+  background-color: var(--r);
+  color: var(--w);
+  padding: 30px;
+  width: 80vw;
+  margin-top: -30px;
+}
+
+.wwc h2 {
+  color: var(--w);
+}
+
+.cardspecial {
+  color: var(--g);
+}
+
+.csize {
+  min-height: 400px;
+  width: 100%;
+}
+
+.card1 {
+  background-image: url(images/WWW-EIAL.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.card2 {
+  background-image: url(images/WWW-SI.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  background-image: url(images/WWW-TNA.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.card4 {
+  background-image: url(images/WWW-ICIMI.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: top center;
+}
+
+/*End Div Hell maybe*/
 
 .searchbar {
   width: 100%;
@@ -448,11 +540,44 @@ form.sb button:hover {
         z-index: 1;
       }
 
+      .blinks {
+        display: none;
+      }
+      
+      .alinks {
+        text-align: center;
+        display: block;
+        color: var(--gl);
+      }
+      
+      .alinks a {
+        color: var(--gl);
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: .3s;
+      }
+      
+      .alinks a:hover {
+        color: var(--g);
+      }
+
+      .promo {
+        padding-bottom: 40px;
+      }
+
+      footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 35px;
+      }
+
 
       /*WW?! W?!*/
 
       .couple {
         display: flex;
+        flex-direction: row;
         justify-content: center;
       }
 
@@ -461,6 +586,33 @@ form.sb button:hover {
         margin-right: -25%;
       }
 
+      .card:nth-child(odd) {
+        flex-direction: row;
+      }
+
+      .card:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .wwc {
+        width: 90vw;
+        padding: 30px;
+        margin-top: 100px;
+      }
+
+      .cl {
+        margin-left: -50px;
+      }
+
+      .cr {
+        margin-left: 50px;
+      }
+
+      .csize {
+        min-height: 710px;
+        width: 70vw;
+        margin-left: -50px;
+      }
       
 
 }
