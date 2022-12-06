@@ -367,6 +367,8 @@ footer p {
 
 /*End Div Hell maybe*/
 
+/* TOUR */
+
 .searchbar {
   width: 100%;
 }
@@ -409,6 +411,126 @@ form.sb button {
 
 form.sb button:hover {
   background: var(--rl);
+}
+
+/* Dropdown Button */
+.ddcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.dropbtn {
+  background-color: var(--r);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0px 0px 5px;
+}
+
+.dropbtn img {
+  margin-top: 5px;
+}
+
+.ddgroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--w);
+  border-left: none;
+  border-radius: 5px;
+}
+
+.ddgroup p {
+  color: var(--bg);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 5px;
+  background-color: var(--w);
+  min-width: 235px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* END BUTTON*/
+
+/* MERCH YIPPEE */
+
+.msec h2 {
+  color: var(--w);
+  text-align: center;
+
+}
+
+.mbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.mfinal {
+  padding-bottom: 50px;
+}
+
+.merch {
+  padding: 15px;
+}
+
+.merch h3 {
+  color: var(--g);
+  font-size: 24px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.merch p {
+  padding-right: 25px;
+  padding-left: 10px;
+}
+
+.mbut {
+  font-size: 18px;
+  line-height: 5px;
+  padding: 15px 20px 15px 20px;
+  text-align: center;
+}
+
+.gb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Desktop */
@@ -595,7 +717,6 @@ form.sb button:hover {
       }
 
       .wwc {
-        width: 90vw;
         padding: 30px;
         margin-top: 100px;
       }
@@ -605,13 +726,28 @@ form.sb button:hover {
       }
 
       .cr {
-        margin-left: 50px;
+        z-index: 900;
       }
 
       .csize {
         min-height: 710px;
         width: 70vw;
         margin-left: -50px;
+      }
+
+      /* MERCH */
+
+      .mbox{
+        flex-direction: row;
+      }
+
+      .merch {
+        padding: 15px 30px 15px 30px;
+      }
+
+      .msec h2 {
+        text-align: left;
+        margin-left: 15%;
       }
       
 
