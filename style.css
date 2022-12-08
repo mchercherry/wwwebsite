@@ -414,19 +414,25 @@ form.sb button:hover {
 }
 
 /* Dropdown Button */
+
 .ddcontainer {
+  padding-top: 30px;
+}
+
+.ddc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  padding: 8px;
 }
 
 .dropbtn {
   background-color: var(--r);
   padding: 16px;
-  font-size: 16px;
   border: none;
   border-radius: 4px 0px 0px 5px;
+  width: 100px;
 }
 
 .dropbtn img {
@@ -436,11 +442,12 @@ form.sb button:hover {
 .ddgroup {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--w);
   border-left: none;
   border-radius: 5px;
+  width: 375px;
 }
 
 .ddgroup p {
@@ -459,7 +466,7 @@ form.sb button:hover {
   position: absolute;
   left: 5px;
   background-color: var(--w);
-  min-width: 235px;
+  min-width: 365px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 0px 0px 5px 5px;
@@ -467,21 +474,49 @@ form.sb button:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: var(--bg);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: var(--gl);}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: var(--rl);}
 /* END BUTTON*/
+
+.glink {
+  color: var(--g);
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.glink:hover {
+  color: var(--gl);
+}
+
+.ibox h3 {
+  color: var(--gl);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: .075rem;
+  padding: 20px 40px 0px 40px;
+  font-style: italic;
+}
+
+.icont {
+  padding-bottom: 40px;
+}
+
+.ibhead {
+  padding: 50px 20px 0 20px;
+}
 
 /* MERCH YIPPEE */
 
@@ -734,6 +769,52 @@ form.sb button:hover {
         width: 70vw;
         margin-left: -50px;
       }
+
+      /* Ticketsssssss */
+
+      .ddgroup {
+        width: 750px;
+      }
+
+      .dropdown-content {
+        min-width: 740px;
+      }
+
+      .box1 {
+        padding-left: 30px;
+      }
+
+      .box2 {
+        padding-right: 30px;
+      }
+
+      .box1 p {
+        padding-right: 15px;
+      }
+
+      .box2 p {
+        padding-left: 20px;
+      }
+
+      .box2 h3 {
+        padding-left: 20px;
+      }
+
+      .ibhead {
+        text-align: left;
+        padding-left: 60px;
+        width: 62%;
+      }
+
+      .ibhead::before {
+        font-weight: bold;
+        content: "THINGS TO KNOW ";
+      }
+
+      .icont {
+        display: flex;
+      }
+
 
       /* MERCH */
 
