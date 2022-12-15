@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="purchase.css">
 
     <title>Ticket Purchase</title>
     <link rel="icon" type="image/x-icon" href="images/Icons/little-guy.png">
@@ -37,6 +37,124 @@
 </div>
 
 
+<div class="t-form">
+
+<div class="tpflex">
+  <form class="ticket">
+    <!--Alignments completely wig out if everything isn't inside the form tags-->
+  <div class="info">
+    <h2>Hawthnorne Theatre</h2>
+    <p>
+      <b>1507 SE Cesar E. Chavez Portland, OR 97214</b><br>
+      <b>Friday, September 16th - 8PM</b><br>
+      <b>THIS IS AN IN-PERSON EVENT</b> &#40;masks appreciated&#41;<br>
+      Will Wood performing with - SHAYFER JAMES and MATT PLESS<br>
+      Contact <a href="mailto: mthrasher@DTI.com">MIKE THRASHER</a> with all inqueries about the venue<br>
+      Contact <a href="mailto: wwot@DTI.com">wwot@DTI.com</a> with all inqueries about the show
+    </p>
+  </div>
+<hr class="peekaboo">
+    <h2 id="bome">Ticket Type</h2>
+    <div class="biggeragebox">
+    <div class="agebox">
+    <label for="18+">18+ ticket: $30</label>
+    <div class="select age">
+      <select name="18+" id="18+">
+        <option value="18-0">0</option>
+        <option value="18-1">1</option>
+        <option value="18-2">2</option>
+        <option value="18-3">3</option>
+        <option value="18-4">4</option>
+        <option value="18-5">5</option>
+        <option value="18-6">6</option>
+      </select>
+    </div>
+  </div>
+  <div class="agebox">
+    <label for="21+">21+ ticket: $30</label>
+    <div class="select age">
+      <select name="21+" id="21+">
+        <option value="21-0">0</option>
+        <option value="21-1">1</option>
+        <option value="21-2">2</option>
+        <option value="21-3">3</option>
+        <option value="21-4">4</option>
+        <option value="21-5">5</option>
+        <option value="21-6">6</option>
+      </select>
+    </div>
+  </div>
+</div>
+  </form>
+</div>
+
+<!--One big form time-->
+<div class="tpnorm">
+<form action="/TY.html" class="purchase">
+  <hr>
+  <h2>Delivery Method</h2>
+  <div class="flexit">
+  <div class="select">
+  <select name="dm" id="dm">
+    <option value="free">Print at home/Mobile ticket | Free</option>
+    <option value="5.99">Mail to billing address | $5.99</option>
+  </select>
+  </div>
+</div>
+<hr>
+<h2>Billing Address</h2>
+  <div class="tfield">
+    <label for="street"><b>Street Address</b></label><br>
+    <input type="text" id="street" name="street" placeholder="Line 1" required><br>
+  </div>
+  <div class="tfield">
+    <label for="street2"><b>Street Address 2</b></label><br>
+    <input type="text" id="street2" name="street2" placeholder="Line 2 &#40;optional&#41;"><br>
+  </div>
+  <div class="tfield">
+    <label for="city"><b>City</b></label><br>
+    <input type="text" id="city" name="city" placeholder="City" required><br>
+  </div>
+    <div class="form-group">
+      <div class="tfield">
+        <label for="state"><b>State</b></label><br>
+        <input type="text" id="state" name="state" placeholder="State" required><br>
+      </div>
+      <div class="tfield">
+        <label for="zipcode"><b>Zipcode</b></label><br>
+        <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode" pattern="[0-9]{5}" title="Invalid zipcode" minlength="5" maxlength="5" required><br>
+      </div>
+    </div>
+  <div class="tfield">
+    <label for="name"><b>Full Name</b></label><br>
+    <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+  </div>
+  <div class="tfield bump">  
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" id="email" name="email" placeholder="jdoe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Invalid email" required><br>
+  </div>
+<hr>
+<h2>Payment Info</h2>
+  <div class="tfield">
+    <label for="cnumber"><b>Card Number</b></label><br>
+    <input type="text" id="cnumber" name="cnumber" placeholder="XXXX XXXX XXXX XXXX" minlength="16" maxlength="19" required><br>
+  </div>
+  <div class="tfield">
+    <label for="edate"><b>Expiration Date</b></label><br>
+    <input type="text" id="edate" name="edate" placeholder="mm/yy" pattern="[0-9/]{5}" title="Invalid date" minlength="5" maxlength="5" required><br>
+  </div>
+  <div class="tfield bump">
+    <label for="sc"><b>Security Code</b></label><br>
+    <input type="text" id="sc" name="sc" placeholder="XXX" pattern="[0-9]{3}" title="Invalid CVC" min-length="3" maxlength="3" required><br>
+  </div>
+  <div class="buttonbox">
+    <button><input type="submit" value="Purchase"></button>
+  </div>
+
+</form>
+</div>
+
+</div>
 
 <!--Footer Gang-->
 <footer>

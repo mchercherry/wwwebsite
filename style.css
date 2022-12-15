@@ -9,6 +9,7 @@
   --b: #0E0D3F;
   --g: #E25F00;
   --gl: #FFB986;
+  --gll: #FFD2B1;
 }
 
 *, *::before, *::after {
@@ -45,6 +46,10 @@ p {
   padding: 10px 40px;
 }
 
+.herobox p {
+  padding: 15px 0px 30px 0px;
+}
+
 .bigbreak {
   content: "";
   display: block;
@@ -75,7 +80,7 @@ h2 {
   font-size: 20px;
   line-height: 100px;
   font-weight: bold;
-  color: var(--gl);
+  color: var(--gll);
   padding: 20px;
   background-color: var(--g);
   border-radius: 5px;
@@ -214,6 +219,10 @@ footer p {
   width: 4.5em;
 }
 
+.ficons a {
+  text-decoration: none;
+}
+
 .secret {
   background: var(--nav);
   min-height: 7rem;
@@ -272,14 +281,14 @@ footer p {
 }
 
 .blinks a {
-  color: var(--gl);
+  color: var(--g);
   text-decoration: none;
   font-size: 1.2rem;
   transition: .3s;
 }
 
 .blinks a:hover {
-  color: var(--g);
+  color: var(--gl);
 }
 
 .promo {
@@ -431,7 +440,7 @@ form.sb button:hover {
   background-color: var(--r);
   padding: 16px;
   border: none;
-  border-radius: 4px 0px 0px 5px;
+  border-radius: 3px 0px 0px 3px;
   width: 100px;
 }
 
@@ -708,14 +717,14 @@ form.sb button:hover {
       }
       
       .alinks a {
-        color: var(--gl);
+        color: var(--g);
         text-decoration: none;
         font-size: 1.2rem;
         transition: .3s;
       }
       
       .alinks a:hover {
-        color: var(--g);
+        color: var(--gl);
       }
 
       .promo {
@@ -768,6 +777,10 @@ form.sb button:hover {
         min-height: 710px;
         width: 70vw;
         margin-left: -50px;
+      }
+
+      .clast {
+        padding-bottom: 0;
       }
 
       /* Ticketsssssss */

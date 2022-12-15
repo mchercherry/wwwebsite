@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Raleway&display=swap');
+
+:root {
+  --nav: #471542;
+  --bg: #0C0B08;
+  --bgl: #1E1E1E;
+  --w: #EFE6CA;
+  --r: #400004;
+  --rl: #BB0000;
+  --b: #0E0D3F;
+  --g: #E25F00;
+  --gl: #FFB986;
+  --gll: #FFD2B1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background-color: var(--w);
+}
+
+p {
+    font-family: 'Raleway', san-serif;
+    font-size: 18px;
+    color: var(--bg);
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: .075rem;
+    padding: 10px 0px 10px 0px;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: var(--g);
+    line-height: 56px;
+    font-weight: bold;
+    letter-spacing: .075rem;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .t-form a {
+    color: var(--g);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: .3s;
+  }
+  
+  .t-form a:hover {
+    color: var(--gl);
+  }
+
+  hr {
+    border-color: var(--gll);
+    border-top-color: var(--g);
+    width: 90%;
+  }
+
+  .tpnorm, .tpflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+form hr {
+    width: 100%;
+}
+
+  form {
+    width: 90%;
+  }
+
+  form input {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--gl);
+    border-left: 4px solid var(--g);
+    background: var(--gll);
+    border-radius: 0 5px 5px 0;
+  }
+
+  ::placeholder {
+    color: var(--bgl);
+    font-family: 'Raleway', san-serif;
+    font-size: 14px;
+  }
+
+.tfield {
+    padding: 10px 0 10px 0;
+}
+
+.bump {
+    padding-bottom: 30px;
+}
+
+button input {
+    border: none;
+    background-color: transparent;
+    color: var(--gll);
+    font-family: 'Raleway', san-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--g);
+    transition: .3s;
+}
+
+button input:hover {
+    color: var(--g)
+}
+
+button:hover {
+    background-color: var(--gl);
+}
+
+.buttonbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 30px;
+}
+
+  /** Navigation Sillies Part 2 **/
+.navigation {
+    background: var(--nav);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    min-height: 7rem;
+  }
+
+  .logo {
+  margin-top: 2em;
+  }
+
+.nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-toggle-label span {
+    color: var(--g);
+    font-size: 1.5em;
+  }
+  
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--nav);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: var(--w);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  nav a:hover {
+    color: var(--gl);
+  }
+  
+  .nav-toggle:checked ~ nav {
+     transform: scale(1,1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+/** End Navigation Sillies **/
+
+/** Sillay Footer + Secret Gang **/
+
+footer {
+    background-color: var(--nav);
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  footer p {
+    color: var(--gl);
+    padding: 10px;
+  }
+  
+  .ficons img {
+    padding: 10px;
+    width: 4.5em;
+  }
+
+  .ficons a {
+    text-decoration: none;
+  }
+  
+  .secret {
+    background: var(--nav);
+    min-height: 7rem;
+    width: 100%;
+  }
+  
+  .sc {
+    color: var(--w);
+    text-align: center;
+  }
+
+/** Hello if you're reading this! You've really fallen in, eh? **/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: var(--gl);
+    background-image: none;
+    border: none;
+    border-radius: 5px;
+    /**pt2**/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 10px;
+    color: var(--bg);
+    text-align: right;
+    font-size: 14px;
+    font-family: 'Raleway', san-serif;
+    padding-right: 10px;
+    cursor: pointer;
+    /**pt3**/
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+option {
+    background-color: var(--gll);
+    padding-right: 10px;
+}
+
+.select {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.age {
+    width: 80px;
+}
+
+.age select {
+    font-size: 18px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+ 
+.select::before {
+    content: url(images/Icons/drop.png);
+    position: absolute;
+    top: 3px;
+    left: 0;
+    bottom: 0;
+    padding: 0 15px;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+select:hover {
+    background-color: var(--gll);
+}
+
+.flexit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 30px 0;
+}
+
+.agebox {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.agebox label {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75vh;
+}
+
+.thanks h2 {
+    text-align: center;
+}
+
+
+
+/** Begin Desktop Hell **/
+@media screen and (min-width: 850px) {
+  
+    /** Navigation Sillies Part 2 **/
+    .nav-toggle-label {
+      display: none;
+    }
+    
+  .navigation {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 6fr) 1fr;
+    }
+    
+    .logo {
+      grid-column: 1/4;
+    }
+
+    nav {
+        all:unset;
+        grid-column: 2/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+      }
+      
+      nav a {
+        opacity: 1;
+        position: relative;
+      }
+      
+      nav a::before {
+        content:"";
+        display: block;
+        height: 4px;
+        background: var(--g);
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        right: 0;
+        transform: scale(0,.5);
+        transform-origin: left;
+        transition: transform ease-in-out 300ms;
+      }
+      
+      nav a:hover::before {
+        transform: scale(1,.5);
+      }
+      /** End Navigation Sillies **/
+
+
+      .peekaboo {
+        display: none;
+      }
+
+      .tpflex form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .biggeragebox {
+        display: block;
+        margin-top: 100px;
+        padding-bottom: 50px;
+      }
+
+      #bome {
+        padding-left: 75px;
+      }
+
+      .flexit {
+        display: block;
+        margin-left: 70px;
+      }
+    
+      form input {
+        margin-left: 70px;
+        width: 50%;
+      }
+
+      .tpnorm label {
+        margin-left: 70px;
+      }
+
+      .buttonbox {
+        display: block;
+        margin-left: 70px;
+      }
+
+      button input {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      /** Sillay Footer + Secret **/
+
+      footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 35px;
+      }
+
+      /** I've been feeling kind of melancholy lately. I think there's worms in my brain or something, haha. **/
+
+    }
