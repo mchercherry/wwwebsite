@@ -126,13 +126,13 @@ h2 {
     position: fixed;
     width: 100%;
     z-index: 999;
-    min-height: 7rem;
+    min-height: 7.5rem;
   }
 
   .logo {
   margin-top: 1em;
-  padding: 30px;
-  width: 200px;
+  padding: 20px;
+  height: 100px;
   }
 
 .nav-toggle {
@@ -218,7 +218,7 @@ footer p {
 
 .ficons img {
   padding: 10px;
-  width: 4.5em;
+  width: 3.5em;
 }
 
 .ficons a {
@@ -227,7 +227,7 @@ footer p {
 
 .secret {
   background: var(--nav);
-  min-height: 7rem;
+  min-height: 7.5rem;
   width: 100%;
 }
 
@@ -734,7 +734,7 @@ form.sb button:hover {
       }
 
       footer {
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
         padding: 35px;
