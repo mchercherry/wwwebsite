@@ -148,8 +148,10 @@ button:hover {
   }
 
   .logo {
-  margin-top: 2em;
-  }
+    margin-top: 1em;
+    padding: 20px;
+    height: 100px;
+    }
 
 .nav-toggle {
     display: none;
